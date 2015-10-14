@@ -1,0 +1,26 @@
+{
+    "name": "node-openvpn",
+    "version": "0.1.0",
+    "description": "Manage, Add & Remove Startup tasks on windows, mac & linux",
+    "author": {
+        "name": "Luigi Poole",
+        "email": "luigipoole@outlook.com"
+    },
+    "keywords": [
+        "node startup",
+        "startup",
+        "manager",
+        "login",
+        "auto start"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/luigiplr/node-startup-manager.git"
+    },
+    "main": "index.js",
+    "license": "GPL-3.0",
+    "dependencies": {
+        "bluebird": "^2.9.34",
+        "lodash": "^3.10.1",
+    }
+}
