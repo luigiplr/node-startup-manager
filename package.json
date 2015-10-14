@@ -1,6 +1,6 @@
 {
   "name": "node-startup-manager",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Manage, Add & Remove Startup tasks on windows, mac & linux",
   "author": {
     "name": "Luigi Poole",
