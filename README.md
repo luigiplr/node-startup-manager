@@ -4,10 +4,20 @@ node-startup-manager
 [![npm version](https://badge.fury.io/js/node-startup-manager.svg)](http://badge.fury.io/js/node-startup-manager)
 
 
-
 Manage Startup tasks for OSX, Windows & Linux ([Ubuntu](http://www.ubuntu.com) & [distros based off of Ubuntu](http://www.omgubuntu.co.uk/2014/06/5-ubuntu-based-distros-better-than-the-real-thing)) for [Node.js](http://nodejs.org) apps.
 
 Note: Module utalizes [ES6](http://www.ecma-international.org/ecma-262/6.0) [features](http://es6-features.org)
+
+
+Installation
+-------
+
+```bash
+$ npm install node-startup-manager --save
+```
+
+Code example
+-------
 
 ```js
 var startupManager = require('node-startup-manager');
@@ -40,11 +50,6 @@ startupManager.checkStartup('My_Awesome_App')
 
 ```
 
-## Installation
-
-```bash
-$ npm install node-startup-manager --save
-```
 Support
 -------
 
