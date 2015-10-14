@@ -5,7 +5,7 @@ node-startup-manager
 
 
 
-Manage Startup tasks for osx, windows & linux for [Node.js](http://nodejs.org) apps.
+Manage Startup tasks for OSX, Windows & Linux ([Ubuntu](http://www.ubuntu.com) & [distros based off of Ubuntu](http://www.omgubuntu.co.uk/2014/06/5-ubuntu-based-distros-better-than-the-real-thing)) for [Node.js](http://nodejs.org) apps.
 
 
 ```js
@@ -42,5 +42,5 @@ startupManager.checkStartup('My_Awesome_App')
 ## Installation
 
 ```bash
-$ npm install node-startup-manager
+$ npm install node-startup-manager --save
 ```
