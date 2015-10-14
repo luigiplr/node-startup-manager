@@ -45,3 +45,20 @@ startupManager.checkStartup('My_Awesome_App')
 ```bash
 $ npm install node-startup-manager --save
 ```
+Support
+-------
+
+If you're having any problem, please [raise an issue](https://github.com/luigiplr/node-startup-manager/issues/new) on GitHub and I'll  be happy to help.
+
+Contribute
+----------
+
+- Issue Tracker: [github.com/luigiplr/openvpn-bin/issues](https://github.com/luigiplr/node-startup-manager/issues)
+- Source Code: [github.com/luigiplr/openvpn-bin](https://github.com/luigiplr/node-startup-manager)
+
+
+
+License
+-------
+
+The project is licensed under the GPL-3.0 license.
