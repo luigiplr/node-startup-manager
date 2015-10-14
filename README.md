@@ -21,7 +21,7 @@ startupManager.addStartup(opts)
         console.log('App added to startup')
     })
     .catch(function(e) {
-        Console.log('Something went wrong; Perms?')
+        Console.log('Something went wrong; Perms?', e)
     });
 
 startupManager.removeStartup('My_Awesome_App')
@@ -29,7 +29,7 @@ startupManager.removeStartup('My_Awesome_App')
         console.log('App removed from startup')
     })
     .catch(function(e) {
-        Console.log('Something went wrong; Perms?')
+        Console.log('Something went wrong; Perms?', e)
     });
 
 startupManager.checkStartup('My_Awesome_App')
