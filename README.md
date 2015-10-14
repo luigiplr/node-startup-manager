@@ -7,6 +7,7 @@ node-startup-manager
 
 Manage Startup tasks for OSX, Windows & Linux ([Ubuntu](http://www.ubuntu.com) & [distros based off of Ubuntu](http://www.omgubuntu.co.uk/2014/06/5-ubuntu-based-distros-better-than-the-real-thing)) for [Node.js](http://nodejs.org) apps.
 
+Note: Module utalizes [ES6](http://www.ecma-international.org/ecma-262/6.0) [features](http://es6-features.org)
 
 ```js
 var startupManager = require('node-startup-manager');
