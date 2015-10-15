@@ -58,8 +58,8 @@ If you're having any problem, please [raise an issue](https://github.com/luigipl
 Contribute
 ----------
 
-- Issue Tracker: [github.com/luigiplr/openvpn-bin/issues](https://github.com/luigiplr/node-startup-manager/issues)
-- Source Code: [github.com/luigiplr/openvpn-bin](https://github.com/luigiplr/node-startup-manager)
+- Issue Tracker: [github.com/luigiplr/node-startup-manager/issues](https://github.com/luigiplr/node-startup-manager/issues)
+- Source Code: [github.com/luigiplr/node-startup-manager](https://github.com/luigiplr/node-startup-manager)
 
 
 
