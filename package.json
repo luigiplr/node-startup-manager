@@ -1,6 +1,6 @@
 {
   "name": "node-startup-manager",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Manage, Add & Remove Startup tasks on windows, mac & linux",
   "main": "index.js",
   "license": "GPL-3.0",
@@ -31,9 +31,9 @@
   },
   "dependencies": {
     "applescript": "^1.0.0",
-    "bluebird": "^2.9.34",
+    "bluebird": "^3.1.1",
     "lodash": "^3.10.1",
-    "winreg": "0.0.12"
+    "winreg": "0.0.13"
   },
   "devDependencies": {
     "babel-cli": "^6.3.17",
