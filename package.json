@@ -2,9 +2,15 @@
   "name": "node-startup-manager",
   "version": "0.0.5",
   "description": "Manage, Add & Remove Startup tasks on windows, mac & linux",
+  "main": "index.js",
+  "license": "GPL-3.0",
   "author": {
     "name": "Luigi Poole",
     "email": "luigipoole@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luigiplr/node-startup-manager.git"
   },
   "keywords": [
     "node-startup-manager",
@@ -19,16 +25,19 @@
     "auto",
     "launch"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/luigiplr/node-startup-manager.git"
+  "scripts": {
+    "postinstall": "npm run build",
+    "build": "rimraf build && babel lib --presets es2015 --out-dir build"
   },
-  "main": "index.js",
-  "license": "GPL-3.0",
   "dependencies": {
     "applescript": "^1.0.0",
     "bluebird": "^2.9.34",
     "lodash": "^3.10.1",
     "winreg": "0.0.12"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "rimraf": "^2.4.4"
   }
 }
