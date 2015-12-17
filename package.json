@@ -1,6 +1,6 @@
 {
   "name": "node-startup-manager",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Manage, Add & Remove Startup tasks on windows, mac & linux",
   "main": "index.js",
   "license": "GPL-3.0",
