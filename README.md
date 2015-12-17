@@ -6,9 +6,6 @@ node-startup-manager
 
 Manage Startup tasks for OSX, Windows & Linux ([Ubuntu](http://www.ubuntu.com) & [distros based off of Ubuntu](http://www.omgubuntu.co.uk/2014/06/5-ubuntu-based-distros-better-than-the-real-thing)) for [Node.js](http://nodejs.org) apps.
 
-Note: Module utalizes [ES6](http://www.ecma-international.org/ecma-262/6.0) [features](http://es6-features.org)
-
-
 Installation
 -------
 
@@ -23,11 +20,12 @@ Code example
 var startupManager = require('node-startup-manager');
 
 var opts = {
-    appPath: 'C:/Program Files/RealVNC/VNC Server/vncserver.exe', //Remeber to path.normalize() any path to make sure its os compatable 
-    appName: 'My_Awesome_App' //What your app shows up in startup list
+    path: 'C:/Program Files/RealVNC/VNC Server/vncserver.exe', // Path to app.
+    name: 'My_Awesome_App', // What your app shows up in startup list.
+    arguments: ['--dev', '--minimized'] // (optional) Arguments applyed to app on startup (Linux & Windows only for now).
 };
 
-startupManager.addStartup(opts)
+startupManager.add(opts)
     .then(function() {
         console.log('App added to startup')
     })
@@ -35,7 +33,7 @@ startupManager.addStartup(opts)
         Console.log('Something went wrong; Perms?', e)
     });
 
-startupManager.removeStartup('My_Awesome_App')
+startupManager.remove('My_Awesome_App')
     .then(function() {
         console.log('App removed from startup')
     })
@@ -43,7 +41,7 @@ startupManager.removeStartup('My_Awesome_App')
         Console.log('Something went wrong; Perms?', e)
     });
 
-startupManager.checkStartup('My_Awesome_App')
+startupManager.check('My_Awesome_App')
     .then(function(status) {
         console.log('App statup status:', status) // status returned as a boolen
     });
