@@ -1,1 +1,1 @@
-module.exports = require('./lib/startupmanger.js');
+module.exports = require('./build/startupManger.js');
