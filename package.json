@@ -1,6 +1,6 @@
 {
   "name": "node-startup-manager",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manage, Add & Remove Startup tasks on windows, mac & linux",
   "main": "index.js",
   "license": "GPL-3.0",
@@ -27,7 +27,7 @@
   ],
   "scripts": {
     "postinstall": "npm run build",
-    "build": "rm -r build && babel lib --presets es2015 --out-dir build"
+    "build": "babel lib --presets es2015 --out-dir build"
   },
   "dependencies": {
     "applescript": "^1.0.0",
