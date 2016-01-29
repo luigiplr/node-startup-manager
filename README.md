@@ -20,7 +20,7 @@ Code example
 var startupManager = require('node-startup-manager');
 
 var opts = {
-    path: 'C:/Program Files/RealVNC/VNC Server/vncserver.exe', // Path to app.
+    path: 'C:/Program Files/RealVNC/VNC Server/vncserver.exe', // Path to app - .exe for Windows and .app for OS X
     name: 'My_Awesome_App', // What your app shows up in startup list.
     arguments: ['--dev', '--minimized'] // (optional) Arguments applyed to app on startup (Linux & Windows only for now).
 };
