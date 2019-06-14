@@ -17,13 +17,13 @@ var regKey = new _winreg2.default({
 
 module.exports = {
     enableStartOnBoot: function enableStartOnBoot() {
-        var name = arguments.length <= 0 || arguments[0] === undefined ? '' : arguments[0];
+        var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
         var appPath = arguments[1];
-        var appArguments = arguments.length <= 2 || arguments[2] === undefined ? [] : arguments[2];
+        var appArguments = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
 
         return new _bluebird2.default(function (resolve, reject) {
             try {
-                regKey.set(name, _winreg2.default.REG_SZ, '\"' + appPath + (appArguments.length > 0 ? ' ' + appArguments.join(' ') : '') + '\"', resolve);
+                regKey.set(name, _winreg2.default.REG_SZ, '\"' + appPath + '\"' + (appArguments.length > 0 ? ' ' + appArguments.join(' ') : ''), resolve);
             } catch (e) {
                 reject(e);
             }
